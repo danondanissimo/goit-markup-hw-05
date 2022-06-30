@@ -105,10 +105,39 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
+  position: relative;
   color: var(--accent);
+}
+
+.site-nav-link.current.studio::before {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  content: '';
+  width: 48px;
+  height: 4px;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.site-nav-link.current.portfolio::before {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  content: '';
+  width: 78px;
+  height: 4px;
+
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .site-nav-link:hover,
@@ -145,6 +174,10 @@ section {
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-weight: 500;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts:hover,
@@ -155,6 +188,10 @@ section {
 .icon {
   fill: currentColor;
   margin-right: 10px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:hover {
@@ -230,6 +267,10 @@ section {
   margin-right: auto;
   cursor: pointer;
   letter-spacing: 0.06em;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -399,6 +440,10 @@ section {
   height: 44px;
   width: 44px;
   border-radius: 50%;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-network-link:visited {
@@ -440,6 +485,10 @@ section {
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   color: var(--primary-icon-color);
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -478,6 +527,10 @@ section {
   color: var(--accent-secondary);
   font-weight: 400;
   line-height: 1.7;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .location.link:visited {
@@ -493,6 +546,10 @@ section {
   color: var(--footer-contacts);
   font-weight: 400;
   line-height: 1.5;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts:hover,
@@ -528,6 +585,10 @@ section {
   background-color: rgba(255, 255, 255, 0.1);
   background-size: contain;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join .social-network-link:hover,
@@ -555,6 +616,10 @@ section {
   line-height: 1.6;
   text-align: Center;
   cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter:hover,
@@ -595,6 +660,10 @@ section {
 
 .project-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
