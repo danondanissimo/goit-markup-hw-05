@@ -62,7 +62,15 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+        </div>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-button" data-modal-close>
+              <img src="./images/vector.png" alt="Закрыть" />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -128,6 +136,7 @@
           <ul class="advantages-list list">
             <li class="advantage">
               <img src="./images/image1.jpg" alt="Сотрудник работает за планшетом" width="370" />
+              <p class="advantage-overlay">Десктопные приложения</p>
             </li>
             <li class="advantage">
               <img
@@ -135,6 +144,7 @@
                 alt="Сотрудник адаптирует отображение страницы под телефон"
                 width="370"
               />
+              <p class="advantage-overlay">Мобильные приложения</p>
             </li>
             <li class="advantage">
               <img
@@ -142,6 +152,7 @@
                 alt="Сотрудник работает с цветовой палитрой"
                 width="370"
               />
+              <p class="advantage-overlay">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -432,5 +443,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
